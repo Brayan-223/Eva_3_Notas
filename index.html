@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notas Adhesivas!</title>
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>sticky notes!</h1>
+
+    <form id="form-agregar" class="form-linea">
+      <input type="text" id="titulo" placeholder="Título" required>
+      <input type="text" id="descripcion" placeholder="Descripción" required>
+      <label class="importante-label">
+        <input type="checkbox" id="importante"> ¡Importante!
+      </label>
+      <button class="btn-agregar" type="submit">AGREGAR</button>
+    </form>
+
+    <div id="notas-container" class="notas-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
